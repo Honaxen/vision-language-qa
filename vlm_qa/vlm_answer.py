@@ -111,7 +111,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Answer questions about images directly with a VLM")
-    parser.add_argument("--model", default="llava", help="Ollama vision model name (e.g. llava, qwen2.5vl)")
+    parser.add_argument("--model", default="gemma3:12b", help="Ollama vision model name (e.g. gemma3:12b, llava, qwen2.5vl)")
     parser.add_argument("--qa_file", default="../data/reference_qa.json")
     parser.add_argument("--images_dir", default="../data/images")
     parser.add_argument("--output", default="../evaluation/results/vlm_answers.json")
