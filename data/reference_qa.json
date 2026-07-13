@@ -1,0 +1,92 @@
+[
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "questions": [
+      {
+        "question": "What was the revenue in Q3?",
+        "reference_answer": "$90k (90 thousand dollars)"
+      },
+      {
+        "question": "Which quarter had the highest revenue?",
+        "reference_answer": "Q4"
+      },
+      {
+        "question": "What was the total revenue across all four quarters?",
+        "reference_answer": "$560k"
+      }
+    ]
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "questions": [
+      {
+        "question": "In which month was traffic highest?",
+        "reference_answer": "May"
+      },
+      {
+        "question": "Did traffic increase or decrease from February to March?",
+        "reference_answer": "decreased"
+      },
+      {
+        "question": "What was the traffic in April?",
+        "reference_answer": "1500"
+      }
+    ]
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "questions": [
+      {
+        "question": "Which company has the largest market share?",
+        "reference_answer": "Company A"
+      },
+      {
+        "question": "What percentage of the market does Company C have?",
+        "reference_answer": "20%"
+      },
+      {
+        "question": "Which company has the smallest market share?",
+        "reference_answer": "Company D"
+      }
+    ]
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "questions": [
+      {
+        "question": "How many Widget B are in stock?",
+        "reference_answer": "12"
+      },
+      {
+        "question": "Which product is the cheapest?",
+        "reference_answer": "Widget C"
+      },
+      {
+        "question": "What is the price of Widget A?",
+        "reference_answer": "$10"
+      }
+    ]
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "questions": [
+      {
+        "question": "What room is the meeting in?",
+        "reference_answer": "Room 204"
+      },
+      {
+        "question": "What time is the meeting?",
+        "reference_answer": "2:00 PM"
+      },
+      {
+        "question": "Who should be contacted, and at what extension?",
+        "reference_answer": "Sarah Chen, ext. 4471"
+      }
+    ]
+  }
+]
