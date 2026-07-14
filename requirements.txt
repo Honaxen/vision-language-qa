@@ -1,0 +1,13 @@
+# Root requirements for vision-language-qa.
+
+# --- Dataset generation ---
+matplotlib
+pillow
+
+# --- OCR baseline ---
+pytesseract
+# Note: also requires the Tesseract binary itself (not just the Python
+# wrapper) -- install via `brew install tesseract` on macOS.
+
+# --- Testing ---
+pytest
