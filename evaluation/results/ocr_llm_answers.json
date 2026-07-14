@@ -1,0 +1,167 @@
+[
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "What was the revenue in Q3?",
+    "reference_answer": "$90k (90 thousand dollars)",
+    "model_answer": "Cannot be determined. The text only provides \"200 4\" with no context for which quarter it represents.",
+    "ocr_extracted_text": "Revenue ($k)\n\nQuarterly Revenue ($ thousands)\n\n200 4",
+    "latency_ms": 1543.37,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "Which quarter had the highest revenue?",
+    "reference_answer": "Q4",
+    "model_answer": "Cannot be determined. The text only provides a single data point: 200. There's no information about which quarter this corresponds to.",
+    "ocr_extracted_text": "Revenue ($k)\n\nQuarterly Revenue ($ thousands)\n\n200 4",
+    "latency_ms": 1305.69,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "What was the total revenue across all four quarters?",
+    "reference_answer": "$560k",
+    "model_answer": "Cannot be determined. The text only provides revenue for one quarter.",
+    "ocr_extracted_text": "Revenue ($k)\n\nQuarterly Revenue ($ thousands)\n\n200 4",
+    "latency_ms": 764.23,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "In which month was traffic highest?",
+    "reference_answer": "May",
+    "model_answer": "January.",
+    "ocr_extracted_text": "Visitors\n\nMonthly Website Traffic\n\n1700 +\n\n1600 +\n\n1500 4\n\n1400 +\n\n1300 4\n\n1200 4\n\n1100 4\n\n1000 +\n\n900 4\n\nJan\n\nFeb\n\nMar\n\nApr\n\nMay\n\nJun",
+    "latency_ms": 695.6,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "Did traffic increase or decrease from February to March?",
+    "reference_answer": "decreased",
+    "model_answer": "Increased.",
+    "ocr_extracted_text": "Visitors\n\nMonthly Website Traffic\n\n1700 +\n\n1600 +\n\n1500 4\n\n1400 +\n\n1300 4\n\n1200 4\n\n1100 4\n\n1000 +\n\n900 4\n\nJan\n\nFeb\n\nMar\n\nApr\n\nMay\n\nJun",
+    "latency_ms": 360.44,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "What was the traffic in April?",
+    "reference_answer": "1500",
+    "model_answer": "1400+",
+    "ocr_extracted_text": "Visitors\n\nMonthly Website Traffic\n\n1700 +\n\n1600 +\n\n1500 4\n\n1400 +\n\n1300 4\n\n1200 4\n\n1100 4\n\n1000 +\n\n900 4\n\nJan\n\nFeb\n\nMar\n\nApr\n\nMay\n\nJun",
+    "latency_ms": 456.1,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "Which company has the largest market share?",
+    "reference_answer": "Company A",
+    "model_answer": "Cannot be determined.",
+    "ocr_extracted_text": "Market Share by Company\n\nCompany A\n\nCompany B\n\nCompany D\n\nCompany C",
+    "latency_ms": 653.32,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "What percentage of the market does Company C have?",
+    "reference_answer": "20%",
+    "model_answer": "The text does not contain enough information to answer.",
+    "ocr_extracted_text": "Market Share by Company\n\nCompany A\n\nCompany B\n\nCompany D\n\nCompany C",
+    "latency_ms": 630.86,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "Which company has the smallest market share?",
+    "reference_answer": "Company D",
+    "model_answer": "Cannot be determined.",
+    "ocr_extracted_text": "Market Share by Company\n\nCompany A\n\nCompany B\n\nCompany D\n\nCompany C",
+    "latency_ms": 425.29,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "How many Widget B are in stock?",
+    "reference_answer": "12",
+    "model_answer": "12",
+    "ocr_extracted_text": "Product Price Stock\nWidget A $10 50\nWidget B $25 12\nWidget C $5 200",
+    "latency_ms": 589.31,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "Which product is the cheapest?",
+    "reference_answer": "Widget C",
+    "model_answer": "Widget C",
+    "ocr_extracted_text": "Product Price Stock\nWidget A $10 50\nWidget B $25 12\nWidget C $5 200",
+    "latency_ms": 351.77,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "What is the price of Widget A?",
+    "reference_answer": "$10",
+    "model_answer": "$10",
+    "ocr_extracted_text": "Product Price Stock\nWidget A $10 50\nWidget B $25 12\nWidget C $5 200",
+    "latency_ms": 396.8,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "What room is the meeting in?",
+    "reference_answer": "Room 204",
+    "model_answer": "Room 204.",
+    "ocr_extracted_text": "MEETING NOTICE\n\nProject: Q3 Roadmap Review\nDate: March 15th\n\nTime: 2:00 PM\n\nLocation: Room 204\n\nPlease bring your team's status updates.\nContact: Sarah Chen, ext. 4471",
+    "latency_ms": 821.41,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "What time is the meeting?",
+    "reference_answer": "2:00 PM",
+    "model_answer": "2:00 PM",
+    "ocr_extracted_text": "MEETING NOTICE\n\nProject: Q3 Roadmap Review\nDate: March 15th\n\nTime: 2:00 PM\n\nLocation: Room 204\n\nPlease bring your team's status updates.\nContact: Sarah Chen, ext. 4471",
+    "latency_ms": 459.14,
+    "error": null,
+    "method": "ocr_then_llm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "Who should be contacted, and at what extension?",
+    "reference_answer": "Sarah Chen, ext. 4471",
+    "model_answer": "Sarah Chen, ext. 4471.",
+    "ocr_extracted_text": "MEETING NOTICE\n\nProject: Q3 Roadmap Review\nDate: March 15th\n\nTime: 2:00 PM\n\nLocation: Room 204\n\nPlease bring your team's status updates.\nContact: Sarah Chen, ext. 4471",
+    "latency_ms": 666.81,
+    "error": null,
+    "method": "ocr_then_llm"
+  }
+]

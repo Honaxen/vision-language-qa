@@ -102,17 +102,19 @@ python evaluation/compare_accuracy.py \
   --output evaluation/results/accuracy_report.json
 ```
 
-Example output *(illustrative — replace with your own run)*:
+Actual results from this run:
 ```
 === Accuracy by Image Type ===
 Type         Direct VLM     OCR+LLM
 ----------------------------------------
-chart        86.7%          40.0%
-document     100.0%         88.9%
-table        100.0%         77.8%
+chart        100.0%         33.3%
+document     100.0%         100.0%
+table        100.0%         100.0%
 
-Overall -- Direct VLM: 93.3%, OCR+LLM: 66.7%
+Overall -- Direct VLM: 100.0%, OCR+LLM: 60.0%
 ```
+
+The gap is entirely concentrated in charts. On documents and tables — where the image actually contains literal text — OCR+LLM matches the direct VLM exactly. On charts, where the "data" is bars, slices, and line positions rather than text, OCR extracts fragments (axis labels, a title, maybe a legend) but nothing resembling the actual values, and the downstream LLM has no way to recover what was never captured.
 
 ### 5. Run tests
 
@@ -133,8 +135,8 @@ Python · Ollama (Gemma 3 vision / llava / qwen2.5-vl) · Tesseract OCR · pytes
 **Synthetic data made grading unambiguous.**
 Because the same script that draws "Q3: $90k" onto the chart also writes "$90k" as the reference answer, there's never a question of what the "real" answer was. That removed an entire category of evaluation noise that scraped or found-online images would have introduced.
 
-**OCR doesn't fail — it fails silently, downstream.**
-The interesting failures weren't OCR crashing or returning nothing. They were subtler: a misread axis label or garbled number that the downstream LLM had no way to detect or recover from, because it never saw the original pixels. That's the actual argument for direct VLM QA on visual content — not that OCR is bad, but that its errors are invisible to everything after it.
+**OCR doesn't fail everywhere — it fails exactly where there's no text to extract.**
+The measured result made this precise instead of anecdotal: OCR+LLM matched the direct VLM exactly on documents and tables (100% both), then collapsed to 33.3% on charts specifically. That's not OCR being generally unreliable — Tesseract read the axis labels and titles just fine. It's that a chart's actual information (which bar is tallest, what a slice's percentage is) was never text in the first place, so there was nothing for OCR to extract and nothing for the downstream LLM to reason about.
 
 **Averaging by image type instead of overall was the actual point of this project.**
 A single blended accuracy number would have hidden exactly the finding this project exists to surface: OCR+LLM does reasonably on plain-text documents (where there's real text to extract) and falls apart on charts (where the "text" — bars, slices, line positions — was never text to begin with).

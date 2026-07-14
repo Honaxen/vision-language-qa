@@ -1,0 +1,152 @@
+[
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "What was the revenue in Q3?",
+    "reference_answer": "$90k (90 thousand dollars)",
+    "model_answer": "Based on the provided bar chart, the revenue in Q3 was 90 thousand dollars.",
+    "latency_ms": 7966.28,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "Which quarter had the highest revenue?",
+    "reference_answer": "Q4",
+    "model_answer": "Based on the bar chart, **Q4 (fourth quarter)** had the highest revenue. Its bar is the tallest, reaching approximately 200 (in thousands of dollars).",
+    "latency_ms": 1545.45,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "bar_chart_revenue.png",
+    "image_type": "chart",
+    "question": "What was the total revenue across all four quarters?",
+    "reference_answer": "$560k",
+    "model_answer": "Based on the bar graph provided, here's the revenue for each quarter:\n\n*   Q1: $125,000\n*   Q2: $150,000\n*   Q3: $90,000\n*   Q4: $200,000\n\nTo calculate the total revenue across all four quarters, we add the revenue from each quarter:\n\n$125,000 + $150,000 + $90,000 + $200,000 = $565,000\n\n**Therefore, the total revenue across all four quarters was $565,000.**",
+    "latency_ms": 5575.74,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "In which month was traffic highest?",
+    "reference_answer": "May",
+    "model_answer": "According to the graph, **May** had the highest traffic.",
+    "latency_ms": 2971.05,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "Did traffic increase or decrease from February to March?",
+    "reference_answer": "decreased",
+    "model_answer": "Based on the graph, traffic **decreased** from February to March. The line representing traffic in February is higher than the line representing traffic in March, indicating a lower number of visitors in March.",
+    "latency_ms": 1677.32,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "line_chart_traffic.png",
+    "image_type": "chart",
+    "question": "What was the traffic in April?",
+    "reference_answer": "1500",
+    "model_answer": "According to the graph, the traffic in April was approximately 1500 visitors.",
+    "latency_ms": 930.17,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "Which company has the largest market share?",
+    "reference_answer": "Company A",
+    "model_answer": "Based on the pie chart, **Company A** has the largest market share with 40%.",
+    "latency_ms": 3216.46,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "What percentage of the market does Company C have?",
+    "reference_answer": "20%",
+    "model_answer": "According to the pie chart, Company C has 20% of the market.",
+    "latency_ms": 900.26,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "pie_chart_market_share.png",
+    "image_type": "chart",
+    "question": "Which company has the smallest market share?",
+    "reference_answer": "Company D",
+    "model_answer": "According to the pie chart, **Company D** has the smallest market share at 15%.",
+    "latency_ms": 1002.54,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "How many Widget B are in stock?",
+    "reference_answer": "12",
+    "model_answer": "According to the table, there are 12 Widget B in stock.",
+    "latency_ms": 3061.2,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "Which product is the cheapest?",
+    "reference_answer": "Widget C",
+    "model_answer": "According to the table, **Widget C** is the cheapest, with a price of $5.",
+    "latency_ms": 996.79,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "table_inventory.png",
+    "image_type": "table",
+    "question": "What is the price of Widget A?",
+    "reference_answer": "$10",
+    "model_answer": "According to the table, the price of Widget A is $10.",
+    "latency_ms": 824.89,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "What room is the meeting in?",
+    "reference_answer": "Room 204",
+    "model_answer": "The meeting is in **Room 204**.",
+    "latency_ms": 2921.03,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "What time is the meeting?",
+    "reference_answer": "2:00 PM",
+    "model_answer": "The meeting is at 2:00 PM.",
+    "latency_ms": 690.58,
+    "error": null,
+    "method": "direct_vlm"
+  },
+  {
+    "image": "document_meeting_notice.png",
+    "image_type": "document",
+    "question": "Who should be contacted, and at what extension?",
+    "reference_answer": "Sarah Chen, ext. 4471",
+    "model_answer": "According to the notice, Sarah Chen should be contacted at extension 4471.",
+    "latency_ms": 936.92,
+    "error": null,
+    "method": "direct_vlm"
+  }
+]
